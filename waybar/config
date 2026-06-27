@@ -1,0 +1,15 @@
+{
+    // Base of bar
+	"layer": "top",
+	"position": "top",
+	"height": 33,
+	"reload-on-change": true,
+
+	// Modules
+	"modules-left": ["niri/workspaces"],
+	//"modules-center": ["clock"],
+	"modules-right": ["clock", "pulseaudio", "pulseaudio#mic", "memory", "cpu", "power-profiles-daemon","tray", "custom/power"],
+
+    // Actual modules
+	"include": ["~/.config/waybar/stuff/modules"]
+}

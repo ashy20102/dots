@@ -1,0 +1,77 @@
+/* matugen goodies */
+@import "colors.css";
+
+* {
+    font-family: JetBrainsMono Nerd Font Propo;
+    font-size: 16px;
+    min-height: 25px;
+    border-radius: 0px;
+}
+
+window#waybar {
+    background: transparent;
+    color: @on_background;
+}
+
+/*
+.modules-left,
+.modules-center,
+.modules-right {
+    background: @background;
+    border: 1px solid @primary;
+    border-radius: 4px;
+}
+*/
+
+#custom-privacy-dots, #clock, #tray, #mpd, #network, #cpu, #memory, #pulseaudio {
+    margin: 6px 0px 6px 0px;
+    padding: 0px 8px;
+    /*
+	  border-radius: 4px;
+	  border: 2px solid @primary;
+	  */
+}
+
+#network {
+	  min-width: 100px;
+}
+
+#cpu,
+#memory,
+#battery,
+#pulseaudio {
+    min-width: 60px;
+}
+
+tooltip {
+    background-color: @background;
+    border: 1px solid @surface_variant;
+    border-radius: 0px;
+}
+
+#custom-power {
+    color: @primary;
+}
+
+#workspaces button {
+    color: @on_surface;
+    min-width: 0;
+    min-height: 0;
+    border-radius: 9999px;
+    margin: 3px 0px;
+}
+
+#workspaces button:hover {
+    color: @primary;
+    background: @surface_container;
+}
+
+#workspaces button.active {
+    background: @primary_container;
+    color: @background;
+    min-width: 25px;
+}
+
+#mpd.disconnected, #idle_inhibitor.activated, #battery.charging, #network.disconnected, #network.disabled, #pulseaudio.muted {
+    color: @tertiary;
+}
